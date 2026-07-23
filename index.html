@@ -1,51 +1,110 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-<title>Kristel Zee | Business Automation Portfolio</title>
+<title>Kristel Zee | Business Automation Specialist</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
 body {
-    font-family: Arial, sans-serif;
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f7f8fa;
+    color: #333;
     line-height: 1.6;
-    background: #f8f9fa;
 }
+
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
 
 .hero {
-    text-align:center;
-    padding:50px 20px;
+    text-align: center;
+    padding: 80px 20px;
+    background: white;
 }
 
-h1 {
-    font-size:42px;
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
 }
 
-.subtitle {
-    font-size:20px;
-    color:#555;
+
+.hero h2 {
+    font-size: 24px;
+    color: #555;
+    font-weight: normal;
 }
 
-.card {
-    background:white;
-    padding:25px;
-    margin:20px 0;
-    border-radius:12px;
+
+.hero p {
+    max-width: 750px;
+    margin: 20px auto;
+    font-size: 18px;
 }
+
 
 .button {
-    display:inline-block;
-    padding:10px 20px;
-    background:#222;
-    color:white;
-    text-decoration:none;
-    border-radius:6px;
+    display: inline-block;
+    background: #222;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 20px;
 }
+
+
+
+.section {
+    margin-top: 40px;
+}
+
+
+.card {
+    background: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 12px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+
+h3 {
+    margin-top:0;
+}
+
+
+.tag {
+    display:inline-block;
+    background:#eee;
+    padding:5px 12px;
+    border-radius:20px;
+    margin:5px;
+    font-size:14px;
+}
+
+
+footer {
+    text-align:center;
+    padding:40px;
+    color:#666;
+}
+
 
 </style>
 
@@ -58,95 +117,303 @@ h1 {
 <section class="hero">
 
 <h1>
-Business Automation Portfolio
+Kristel Zee
 </h1>
 
-<p class="subtitle">
-Helping businesses work smarter through custom automation, dashboards, and web applications.
+<h2>
+Business Automation Specialist
+</h2>
+
+
+<p>
+Helping businesses work smarter through custom automation, dashboards, and web applications that reduce manual work, improve accuracy, and save valuable time.
 </p>
+
+
+<a class="button" href="#projects">
+View Projects
+</a>
+
 
 </section>
 
 
-<div class="card">
+
+<div class="container">
+
+
+
+<div class="section">
+
 
 <h2>
-About Me
+What I Do
 </h2>
 
+
+<div class="grid">
+
+
+<div class="card">
+
+<h3>
+⚙️ Business Automation
+</h3>
+
 <p>
-I build practical automation solutions that help businesses reduce manual work, improve accuracy, and streamline daily operations.
+Automating repetitive tasks and improving workflows so businesses can save time and focus on higher-value activities.
 </p>
 
 </div>
 
 
+<div class="card">
+
+<h3>
+📊 Dashboards & Reporting
+</h3>
+
+<p>
+Building custom dashboards that organize business data and provide better visibility for decision-making.
+</p>
+
+</div>
+
 
 <div class="card">
+
+<h3>
+🛒 Shopify Automation
+</h3>
+
+<p>
+Creating solutions that simplify ecommerce operations, fulfillment, and internal processes.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+<div class="section" id="projects">
+
 
 <h2>
 Featured Projects
 </h2>
 
 
+
+<div class="card">
+
+
 <h3>
 📊 Mystery Shopping Audit System
 </h3>
 
+
 <p>
-A custom web application that digitizes audit processes, automates scoring, and improves reporting efficiency.
+<strong>Challenge:</strong><br>
+Manual audit processes required time-consuming data collection, scoring, and reporting.
 </p>
+
+
+<p>
+<strong>Solution:</strong><br>
+Built a custom web application that digitizes audits, automates scoring, and centralizes results.
+</p>
+
+
+<p>
+<strong>Built With:</strong>
+</p>
+
+
+<span class="tag">Google Apps Script</span>
+<span class="tag">Google Sheets</span>
+<span class="tag">HTML</span>
+<span class="tag">JavaScript</span>
+
+
+</div>
+
+
+
+
+
+<div class="card">
 
 
 <h3>
 📦 Shopify Fulfillment Automation
 </h3>
 
+
 <p>
-Automation tools designed to simplify order processing and reduce repetitive fulfillment tasks.
+<strong>Challenge:</strong><br>
+Manual order processing and fulfillment updates can consume valuable operational time.
 </p>
+
+
+<p>
+<strong>Solution:</strong><br>
+Developed automation tools to simplify fulfillment workflows and reduce repetitive tasks.
+</p>
+
+
+<p>
+<strong>Built With:</strong>
+</p>
+
+
+<span class="tag">Shopify</span>
+<span class="tag">Automation</span>
+<span class="tag">JavaScript</span>
+
+
+</div>
+
+
+
+
+
+<div class="card">
 
 
 <h3>
 📈 Business Dashboards
 </h3>
 
+
 <p>
-Custom dashboards that transform business data into actionable insights.
+<strong>Challenge:</strong><br>
+Business data scattered across spreadsheets makes reporting slow and difficult.
 </p>
+
+
+<p>
+<strong>Solution:</strong><br>
+Created dashboards that consolidate information and transform data into actionable insights.
+</p>
+
+
+<p>
+<strong>Built With:</strong>
+</p>
+
+
+<span class="tag">Google Sheets</span>
+<span class="tag">Google Apps Script</span>
+<span class="tag">Data Analysis</span>
 
 
 </div>
 
+
+
+</div>
+
+
+
+
+
+<div class="section">
+
+
+<h2>
+Tools & Technologies
+</h2>
 
 
 <div class="card">
 
-<h2>
-Technology
-</h2>
 
-<p>
-Google Apps Script • Google Sheets • Shopify • JavaScript • HTML • CSS
-</p>
+<span class="tag">Google Apps Script</span>
+<span class="tag">Google Sheets</span>
+<span class="tag">Shopify</span>
+<span class="tag">JavaScript</span>
+<span class="tag">HTML</span>
+<span class="tag">CSS</span>
+<span class="tag">Workflow Automation</span>
+
 
 </div>
 
+
+</div>
+
+
+
+
+
+
+<div class="section">
+
+
+<h2>
+About Me
+</h2>
 
 
 <div class="card">
 
-<h2>
-Contact
-</h2>
+<p>
+I specialize in creating practical automation solutions that help businesses reduce manual work, improve efficiency, and build smarter workflows.
+</p>
 
 <p>
-Interested in automating your business processes?
+My focus is understanding business challenges first, then creating tools that solve real operational problems.
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="section">
+
+
+<h2>
+Let's Work Together
+</h2>
+
+
+<div class="card">
+
+<p>
+Have repetitive tasks or processes that take too much time? I can help design and build automation solutions tailored to your business needs.
 </p>
 
 
 </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+<footer>
+
+© 2026 Kristel Zee | Business Automation Portfolio
+
+</footer>
+
 
 
 </body>
+
 </html>
