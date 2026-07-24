@@ -7,106 +7,242 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
 <style>
 
+:root {
+    --primary:#2563eb;
+    --dark:#0f172a;
+    --light:#f8fafc;
+    --card:#ffffff;
+    --text:#334155;
+}
+
+
+*{
+    box-sizing:border-box;
+}
+
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background: #f7f8fa;
-    color: #333;
-    line-height: 1.6;
+
+    margin:0;
+    font-family:
+    Inter, Arial, sans-serif;
+
+    background:
+    var(--light);
+
+    color:
+    var(--text);
+
 }
 
 
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 40px 20px;
+.container{
+
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+
 }
 
 
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-    background: white;
-}
+/* HERO */
 
+.hero{
 
-.hero h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
-}
+    background:
+    linear-gradient(135deg,#2563eb,#1e40af);
 
+    color:white;
 
-.hero h2 {
-    font-size: 24px;
-    color: #555;
-    font-weight: normal;
-}
+    padding:90px 20px;
 
-
-.hero p {
-    max-width: 750px;
-    margin: 20px auto;
-    font-size: 18px;
-}
-
-
-.button {
-    display: inline-block;
-    background: #222;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 8px;
-    text-decoration: none;
-    margin-top: 20px;
-}
-
-
-
-.section {
-    margin-top: 40px;
-}
-
-
-.card {
-    background: white;
-    padding: 30px;
-    margin: 20px 0;
-    border-radius: 12px;
-}
-
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-    gap:20px;
-}
-
-
-h3 {
-    margin-top:0;
-}
-
-
-.tag {
-    display:inline-block;
-    background:#eee;
-    padding:5px 12px;
-    border-radius:20px;
-    margin:5px;
-    font-size:14px;
-}
-
-
-footer {
     text-align:center;
+
+}
+
+
+.hero h1{
+
+    font-size:48px;
+    margin-bottom:10px;
+
+}
+
+
+.hero h2{
+
+    font-weight:400;
+
+}
+
+
+.hero p{
+
+    max-width:750px;
+
+    margin:20px auto;
+
+    font-size:20px;
+
+}
+
+
+.button{
+
+    display:inline-block;
+
+    background:white;
+
+    color:#2563eb;
+
+    padding:14px 28px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    margin-top:20px;
+
+}
+
+
+/* SECTIONS */
+
+
+.section{
+
+    margin-top:60px;
+
+}
+
+
+.section-title{
+
+    text-align:center;
+
+    font-size:32px;
+
+    color:var(--dark);
+
+}
+
+
+
+/* CARDS */
+
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:16px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.08);
+
+}
+
+
+
+.card h3{
+
+    color:#1d4ed8;
+
+}
+
+
+
+.project-image{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+    background:#e2e8f0;
+
+}
+
+
+
+.project-button{
+
+    display:inline-block;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    margin-top:15px;
+
+}
+
+
+
+.tag{
+
+    display:inline-block;
+
+    background:#dbeafe;
+
+    color:#1e40af;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    margin:4px;
+
+    font-size:14px;
+
+}
+
+
+
+footer{
+
+    text-align:center;
+
     padding:40px;
-    color:#666;
+
+    color:#64748b;
+
 }
 
 
 </style>
+
 
 </head>
 
@@ -114,11 +250,14 @@ footer {
 <body>
 
 
+
 <section class="hero">
+
 
 <h1>
 Kristel Zee
 </h1>
+
 
 <h2>
 Business Automation Specialist
@@ -127,6 +266,11 @@ Business Automation Specialist
 
 <p>
 Helping businesses work smarter through custom automation, dashboards, and web applications that reduce manual work, improve accuracy, and save valuable time.
+</p>
+
+
+<p>
+Google Apps Script | Shopify Automation | Business Workflow Solutions
 </p>
 
 
@@ -139,19 +283,23 @@ View Projects
 
 
 
+
+
 <div class="container">
 
 
 
-<div class="section">
+<section class="section">
 
 
-<h2>
+<h2 class="section-title">
 What I Do
 </h2>
 
 
+
 <div class="grid">
+
 
 
 <div class="card">
@@ -167,6 +315,8 @@ Automating repetitive tasks and improving workflows so businesses can save time 
 </div>
 
 
+
+
 <div class="card">
 
 <h3>
@@ -174,10 +324,12 @@ Automating repetitive tasks and improving workflows so businesses can save time 
 </h3>
 
 <p>
-Building custom dashboards that organize business data and provide better visibility for decision-making.
+Creating dashboards that transform business data into actionable insights.
 </p>
 
 </div>
+
+
 
 
 <div class="card">
@@ -187,29 +339,44 @@ Building custom dashboards that organize business data and provide better visibi
 </h3>
 
 <p>
-Creating solutions that simplify ecommerce operations, fulfillment, and internal processes.
+Building solutions that simplify ecommerce operations, fulfillment, and internal workflows.
 </p>
 
 </div>
 
 
-</div>
 
 </div>
 
+</section>
 
 
 
-<div class="section" id="projects">
 
 
-<h2>
+<section class="section" id="projects">
+
+
+<h2 class="section-title">
 Featured Projects
 </h2>
 
 
 
+
+<div class="grid">
+
+
+
+
+
 <div class="card">
+
+
+<img 
+src="images/mystery-shopping.png"
+class="project-image"
+alt="Mystery Shopping Audit System">
 
 
 <h3>
@@ -229,15 +396,30 @@ Built a custom web application that digitizes audits, automates scoring, and cen
 </p>
 
 
-<p>
-<strong>Built With:</strong>
-</p>
+
+<span class="tag">
+Google Apps Script
+</span>
+
+<span class="tag">
+Google Sheets
+</span>
 
 
-<span class="tag">Google Apps Script</span>
-<span class="tag">Google Sheets</span>
-<span class="tag">HTML</span>
-<span class="tag">JavaScript</span>
+<span class="tag">
+JavaScript
+</span>
+
+
+
+<br>
+
+
+<a class="project-button"
+href="YOUR_DEMO_LINK"
+target="_blank">
+Live Demo
+</a>
 
 
 </div>
@@ -246,7 +428,15 @@ Built a custom web application that digitizes audits, automates scoring, and cen
 
 
 
+
+
 <div class="card">
+
+
+<img 
+src="images/shopify-automation.png"
+class="project-image"
+alt="Shopify Automation">
 
 
 <h3>
@@ -256,24 +446,29 @@ Built a custom web application that digitizes audits, automates scoring, and cen
 
 <p>
 <strong>Challenge:</strong><br>
-Manual order processing and fulfillment updates can consume valuable operational time.
+Manual order processing and fulfillment updates consume valuable operational time.
 </p>
 
 
 <p>
 <strong>Solution:</strong><br>
-Developed automation tools to simplify fulfillment workflows and reduce repetitive tasks.
+Created automation tools that simplify fulfillment workflows and reduce repetitive tasks.
 </p>
 
 
-<p>
-<strong>Built With:</strong>
-</p>
+<span class="tag">
+Shopify
+</span>
 
 
-<span class="tag">Shopify</span>
-<span class="tag">Automation</span>
-<span class="tag">JavaScript</span>
+<span class="tag">
+Automation
+</span>
+
+
+<span class="tag">
+JavaScript
+</span>
 
 
 </div>
@@ -282,7 +477,15 @@ Developed automation tools to simplify fulfillment workflows and reduce repetiti
 
 
 
+
+
 <div class="card">
+
+
+<img 
+src="images/dashboard.png"
+class="project-image"
+alt="Business Dashboard">
 
 
 <h3>
@@ -298,34 +501,38 @@ Business data scattered across spreadsheets makes reporting slow and difficult.
 
 <p>
 <strong>Solution:</strong><br>
-Created dashboards that consolidate information and transform data into actionable insights.
+Created dashboards that consolidate information and improve decision-making.
 </p>
 
 
-<p>
-<strong>Built With:</strong>
-</p>
+<span class="tag">
+Google Sheets
+</span>
 
 
-<span class="tag">Google Sheets</span>
-<span class="tag">Google Apps Script</span>
-<span class="tag">Data Analysis</span>
+<span class="tag">
+Data Analysis
+</span>
 
 
 </div>
 
 
 
+
 </div>
 
 
+</section>
 
 
 
-<div class="section">
 
 
-<h2>
+<section class="section">
+
+
+<h2 class="section-title">
 Tools & Technologies
 </h2>
 
@@ -333,62 +540,57 @@ Tools & Technologies
 <div class="card">
 
 
-<span class="tag">Google Apps Script</span>
-<span class="tag">Google Sheets</span>
-<span class="tag">Shopify</span>
-<span class="tag">JavaScript</span>
-<span class="tag">HTML</span>
-<span class="tag">CSS</span>
-<span class="tag">Workflow Automation</span>
+<span class="tag">
+Google Apps Script
+</span>
+
+
+<span class="tag">
+Google Sheets
+</span>
+
+
+<span class="tag">
+Shopify
+</span>
+
+
+<span class="tag">
+JavaScript
+</span>
+
+
+<span class="tag">
+HTML
+</span>
+
+
+<span class="tag">
+CSS
+</span>
+
 
 
 </div>
 
 
-</div>
+</section>
 
 
 
 
 
 
-<div class="section">
+<section class="section">
 
 
-<h2>
-About Me
-</h2>
-
-
-<div class="card">
-
-<p>
-I specialize in creating practical automation solutions that help businesses reduce manual work, improve efficiency, and build smarter workflows.
-</p>
-
-<p>
-My focus is understanding business challenges first, then creating tools that solve real operational problems.
-</p>
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="section">
-
-
-<h2>
+<h2 class="section-title">
 Let's Work Together
 </h2>
 
 
 <div class="card">
+
 
 <p>
 Have repetitive tasks or processes that take too much time? I can help design and build automation solutions tailored to your business needs.
@@ -398,11 +600,14 @@ Have repetitive tasks or processes that take too much time? I can help design an
 </div>
 
 
+</section>
+
+
+
+
 </div>
 
 
-
-</div>
 
 
 
@@ -411,7 +616,6 @@ Have repetitive tasks or processes that take too much time? I can help design an
 © 2026 Kristel Zee | Business Automation Portfolio
 
 </footer>
-
 
 
 </body>
